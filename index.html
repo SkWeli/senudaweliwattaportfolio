@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+    <title>Senuda Weliwatta Portfolio</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="Images/Website LOGO1.png" rel="icon">
+    <link href="Images/Website LOGO1.png" rel="apple-touch-icon">
+
+  
+    <!-- CSS File -->
+    <link href="Senuda_Weliwatta_Portfolio.css" rel="stylesheet">    
+    <!--<script src="Senuda_Weliwatta_Portfolio.jsx"></script>-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <nav class="sticky">
+        <img src="Images/Website LOGO1.png" alt="" width="70" >
+        <ul>
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#resume">RESUME</a></li>
+            <li><a href="#contact">CONTACT ME</a></li>
+        </ul>
+    </nav>
+    <div id="header">
+        <div class="main">
+
+            <div class="heading">
+                <h1>I'M <span>SENUDA</span> WELIWATTA</h1>
+            </div>
+        </div>
+    </div>
+    <!--About-->
+    <div id="about">        
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/Senuda_Weliwatta_bg.png" alt="image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1><hr><br>
+                <p>Meet an extraordinary individual whose unique blend of qualities and experiences sets them apart. This individual is characterized by a curious and open mind, always eager to explore the vast realms of knowledge and discover new insights. With a passion for continuous learning, they approach life with a sense of wonder and embrace challenges as opportunities for growth.</p><br>
+                <p>In their interactions, this person exudes warmth and kindness, making those around them feel valued and understood. Whether engaging in conversations or collaborating on projects, their thoughtful and empathetic nature shines through. A natural communicator, they have a way of connecting with people on a deeper level, fostering meaningful relationships.                 </p>
+            </div>
+        </div>        
+    </div>
+    <!----------Resume----------->
+    <div id="resume">
+        <h1 class="sub-title">Résumé</h1><hr>
+        <br>
+        <div class="resume">
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('personal_details')">Personal Details</p>
+                <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                <p class="tab-links" onclick="opentab('sports')">Sports</p>
+            </div>
+            <div class="tab-contents active-tab" id="personal_details">
+                <ul>
+                    <li><span>Name with Initials</span><br>S.K.Weliwatta</li><br>
+                    <li><span>Date of Birth</span><br>13.06.2002</li><br>
+                    <li><span>Gender</span><br>Male</li><br>
+                    <li><span>Nationality</span><br>Sinhalese</li><br>
+                </ul>
+            </div>
+            <div class="tab-contents" id="skills">
+                <div class="skill-mf">
+                    <p class="title-s">Skill</p>
+                    <span>C++</span> <span class="pull-right">66%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 66%;" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>JAVA</span> <span class="pull-right">75%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>PHP</span> <span class="pull-right">45%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+            </div>
+            <div class="tab-contents" id="education">
+
+                <table class="coursedetails" width="100%">                    
+                    <tr onclick="show_hide_row('al1'); show_hide_row('al2'); show_hide_row('all'); show_hide_row('al3'); show_hide_row('al4'); show_hide_row('al5');">
+                        <th colspan="2" class="tab-name">G.C.E Advanced Level examination</th>
+                        <!--<th>Royal College, Colombo 07</th>
+                        <th>2019 JAN - 2022 JAN</th>-->
+                    </tr>
+                    <tr id="all" class="al"> 
+                        <th>Subject</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr id="al1" class="al">
+                        <td>Combined Mathematics </td>
+                        <td>C</td>
+                    </tr>
+                    <tr id="al2" class="al">
+                        <td>Physics</td>
+                        <td>C</td>
+                    </tr>
+                    <tr id="al3" class="al">
+                        <td>Chemistry</td>
+                        <td>C</td>
+                    </tr>
+                    <tr id="al4" class="al">
+                        <td>General English</td>
+                        <td>A</td>
+                    </tr>
+                    <tr id="al5" class="al">
+                        <td>General Knowledge </td>
+                        <td>064</td>
+                    </tr>
+
+                    <tr onclick="show_hide_row('ol1'); show_hide_row('ol2'); show_hide_row('ol3'); show_hide_row('ol4'); show_hide_row('oll'); show_hide_row('ol5'); show_hide_row('ol6'); show_hide_row('ol7'); show_hide_row('ol8'); show_hide_row('ol9');">
+                        <th colspan="2" class="tab-name">G.C.E Ordinary Level examination</th>
+                        <!--<th>Royal College, Colombo 07</th>
+                        <th>2013 JAN - 2018 DEC</th>-->
+                    </tr>
+                    <br>
+                    <tr id="oll" class="ol">
+                        <th>Subject</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr id="oll" class="ol">
+                        <td>Mathematics</td>
+                        <td>A</td>
+                    </tr>
+                    <tr id="ol2" class="ol">
+                        <td>Science</td>
+                        <td>A</td>
+                    </tr>
+                    <tr id="ol3" class="ol">
+                        <td>History</td>
+                        <td>A</td>
+                    </tr>
+                    <tr id="ol4" class="ol">
+                        <td>English</td>
+                        <td>A</td>
+                    </tr>
+                    <tr id="ol5" class="ol">
+                        <td>Buddhism</td>
+                        <td>A</td>
+                    </tr>
+                    <tr id="ol6" class="ol">
+                        <td>Sinhala</td>
+                        <td>A</td>
+                    </tr>
+                    <tr id="ol7" class="ol">
+                        <td>ICT</td>
+                        <td>A</td>
+                    </tr>
+                    <tr id="ol8" class="ol">
+                        <td>Oriental Music</td>
+                        <td>A</td>
+                    </tr>
+                    <tr id="ol9" class="ol">
+                        <td>Commerce</td>
+                        <td>A</td>
+                    </tr>
+                    <tr onclick="show_hide_row('sch');">
+                        <th colspan="2" class="tab-name">Grade 5 Scholarship examination</th>
+                        <!--<th>Royal College, Colombo 07</th>
+                        <th>2008 MAR - 2012 AUG</th>-->
+                    </tr>
+                    <tr>
+                        <td id="sch" class="schol">165 Marks</td>
+                    </tr>
+                </table>
+            </div>            
+            <div class="tab-contents" id="certifications">
+                <ul>
+                    <li><span>TOASTMASTERS</span><br>Leadership Development Level 1</li>
+                    <li><span>CISCO I</span><br></li>
+                    <li><span>CISCO II</span><br></li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="sports">
+                <ul>
+                    <li><span>Hockey</span><br>KDU 1st XI Hockey Team</li>
+                    <li><span>Handball</span><br>KDU FOC Handball Team</li>
+                    <li><span>Shooting</span><br>KDU 10m BB Sharpshooter</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+    
+    function show_hide_row(row){
+        $("#"+row).toggle();
+    }
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+
+        //js code for form
+        function submitForm() {
+            var form = document.getElementById('feedbackForm1');
+
+            // Using Fetch API to make a POST request
+            fetch('Senuda_Weliwatta_Portfolio.php', {
+                method: 'POST',
+                body: new FormData(form),
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert(data.success);
+                } else if (data.error) {
+                    alert(data.error);
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
+        
+    </script>
+    <!----------Contact me----------->
+    <div id="contact">
+        <div class="container">
+                <div class="col-lg-6-m-auto">
+                    <div class="card">
+                        <div class="card-title">
+                            <h1>Contact Me</h1><hr>
+                        </div>
+                        <div class="card-body">
+                            <form action="Senuda_Weliwatta_Portfolio.php" method="post" id="feedbackForm1" onsubmit="submitForm(); return false;">
+                                
+                                <div class="input-box-1">
+                                    <input type="text" name="UName" placeholder="User Name" class="form-control mb-2">
+                                    <input type="email" name="Email" placeholder="Email" class="form-control mb-2">
+                                </div>
+                                
+                                <div class="input-box-2">
+                                    <input type="text" name="Subject" placeholder="Subject" class="form-control mb-2"><br>
+                                </div>
+                                <textarea name="message" cols="48" rows="15" placeholder="Type your message here" class="msg"></textarea>
+                                <br><br>
+                                <button class="btn" name="btn-send">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!--------------------Footer--------------------->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Senuda Weliwatta | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    
+    
+
+</body>
+</html>
